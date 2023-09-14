@@ -20,14 +20,25 @@ if (month < 10) month = "0" + month;
 let year = d.getFullYear();
 let fullDate= `${weekday[day]},${date}/${month}/${year}`;
 
-
+// list items section
+const listItems = [];
 
 app.get('/', (req, res) =>
 {
     res.render('index.ejs', 
-    {date: fullDate});
+    {
+    date: fullDate, 
+    listItems: listItems
+    });
 });
 
+app.post('/', (req, res) =>
+{
+    const item = req.body.newTodo;
+    listItems.push(item);
+    res.redirect('/');
+    
+});
 
 app.listen(port, () => 
 {

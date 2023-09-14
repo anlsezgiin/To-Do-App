@@ -8,4 +8,20 @@
     <div class="date-container mt-3">
         <p class="date"><%= date %></p>
     </div>
+    <div class="list-container">
+        <% for(var i = 0; i < listItems.length; i++){ %>
+            <div class="item">
+              <input type="checkbox">
+              
+                <%= listItems[i] %>
+              
+            </div>
+            <% } %>
+        
+            <form class="item" action="/" method="post">
+              <input type="text" name="newTodo" placeholder="New Item" autocomplete="off">
+              <button type="submit" name="listSubmit">+</button>
+            </form>
+    </div>
 </div>
+<script src="index.js"></script>

@@ -1,7 +1,7 @@
 .bg-berserk {
     background-image: url('../images/esdeath.jpg'); /* Arka plan resminin dosya yolu */
     background-size: cover; /* Resmi öğenin boyutuna uygun şekilde kaplamasını sağlar */
-    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+     /* Resmin tekrar etmesini engeller */
     height: 100%; /* Öğenin yüksekliğini belirler veya ihtiyaca göre ayarlar */
 }
 *
@@ -43,3 +43,42 @@ h2
     height: 100%;
     border: 1px solid black;
 }
+.item
+{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+button:hover, button:focus, button:active {
+    -webkit-animation-name: hvr-back-pulse;
+    animation-name: hvr-back-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: rgba(75, 0, 209, 0.75);
+    background-color: rgba(75, 0, 209, 0.75);
+    color: white;
+  }
+  input[type="text"] {
+    text-align: center;
+    
+    top: 10px;
+    border: none;
+    background: transparent;
+    
+    width: 313px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+  }
