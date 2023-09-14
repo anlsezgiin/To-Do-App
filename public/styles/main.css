@@ -1,0 +1,45 @@
+.bg-berserk {
+    background-image: url('../images/esdeath.jpg'); /* Arka plan resminin dosya yolu */
+    background-size: cover; /* Resmi öğenin boyutuna uygun şekilde kaplamasını sağlar */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+    height: 100%; /* Öğenin yüksekliğini belirler veya ihtiyaca göre ayarlar */
+}
+*
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1
+{
+    font-family: 'Noto Serif', serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 3px;
+}
+h2
+{
+    letter-spacing: 20px;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+}
+.date
+{
+    color:black;
+    font-size: 40px;
+    padding: 10px;
+   
+}
+.date-container
+{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    height: 100%;
+    border: 1px solid black;
+}
